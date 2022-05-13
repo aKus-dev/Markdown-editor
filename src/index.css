@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --border-bottom-heading: #929191;
+        --color-a: #111111;
+        --bg-pre: #f3f3f3;
+        --bg-th: #f3f3f3;
+        --bg-tr: #f1efef;
+        --color-code: #c7254e;
+        --bg-code: #f3dfe4;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border-bottom-heading: #929191;
+        --color-a: #b1aaaa;
+        --bg-pre: #292828;
+        --bg-th: #111111;
+        --bg-tr: #292828;
+        --color-code: #c7254e;
+        --bg-code: #251a1d;
+    }
+}
+
+
 /*  TEXT */
 .markdown-container h1 {
     font-size: 30px;
@@ -10,7 +35,7 @@
 .markdown-container h1, h2, h3, h4, h5, h6 {
     margin: 20px 0;
     padding: 5px 0;
-    border-bottom: 1px solid #929191;
+    border-bottom: 1px solid var(--border-bottom-heading);
 }
 
 .markdown-container h2 {
@@ -39,7 +64,7 @@
 }
 
 .markdown-container a {
-    color: #b1aaaa;
+    color: var(--color-a);;
     text-decoration: underline;
     line-height: 1.6;
 }
@@ -85,7 +110,8 @@
 }
 
 .markdown-container th {
-    background-color: #111111;
+    padding: 8px;
+    background-color: var(--bg-th);;
 }
 
 .markdown-container td {
@@ -93,7 +119,7 @@
 }
 
 .markdown-container table tr:nth-child(odd) {
-    background-color: #292828;
+    background-color: var(--bg-tr);;
 }
 
 .markdown-container th {
@@ -102,14 +128,14 @@
 
 /* CODE */
 .markdown-container pre {
-    background-color: #292828;
+    background-color: var(--bg-pre);;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 .markdown-container code {
-    color: #c7254e;
-    background-color: #251a1d;
+    color: var(--color-code);;
+    background-color: var(--bg-code);;
     padding: 3px;
     border-radius: 5px;
 }

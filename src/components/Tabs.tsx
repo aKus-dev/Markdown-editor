@@ -22,7 +22,7 @@ export const Tabs = () => {
                     <Reorder.Item
                         key={tab}
                         value={tab}
-                        className={`${tab === tabActive ? 'bg-[#111111]' : 'bg-[#2c2c2c]'} flex-grow px-4 py-2 rounded-t-[8px] text-white border border-white`}
+                        className={`${tab === tabActive ? 'bg-[#f7f7f7] dark:bg-[#111111]' : 'dark:bg-[#2c2c2c]'} flex-grow px-4 py-2 rounded-t-[8px] dark:text-white border dark:border-white`}
                         whileDrag={{ cursor: 'grab' }}
                         whileHover={{ cursor: 'pointer' }}
                         onClick={() => {
