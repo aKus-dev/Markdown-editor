@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Markdoc from '@markdoc/markdoc';
 
 import { useText } from '../global/markdownAtom';
@@ -8,6 +8,7 @@ export const Preview = () => {
     const [text] = useText();
     const mdRef = useRef<HTMLDivElement>(null);
 
+    // Actualiza la preview
     useEffect(
         () => {
             const doc = text;
