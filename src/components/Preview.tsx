@@ -23,7 +23,7 @@ export const Preview = () => {
     )
 
     return (
-        <div ref={mdRef} className="markdown-container overflow-auto overflow-x-hidden text-white resize-none outline-none h-[calc(100vh-30px)] p-4 bg-[#111111] border border-white rounded-[5px]">
+        <div ref={mdRef} className="markdown-container overflow-auto overflow-x-hidden text-white resize-none outline-none h-[calc(100vh-90px)] lg:h-[calc(100vh-30px)] p-4 bg-[#111111] border border-white rounded-[5px]">
 
         </div>
     )

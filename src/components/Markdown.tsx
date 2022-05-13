@@ -6,7 +6,7 @@ export const Markdown = () => {
 
     return (
         <textarea
-            className="text-white resize-none outline-none h-[calc(100vh-30px)] p-4 bg-[#111111] border border-white rounded-[5px]"
+            className="text-white resize-none outline-none h-[calc(100vh-90px)] lg:h-[calc(100vh-30px)] p-4 bg-[#111111] border border-white rounded-[5px]"
             value={text}
             onChange={e => setText(e.target.value)}
         >
