@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  TEXT */
+.markdown-container  h1 {
+    font-size: 30px;
+}
+
+.markdown-container h1, h2, h3, h4 ,h5, h6 {
+    margin: 20px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #929191;
+}
+
+.markdown-container  h2 {
+    font-size: 28px;
+}
+
+.markdown-container  h3 {
+    font-size: 26px;
+}
+
+.markdown-container  h4 {
+    font-size: 24px;
+}
+
+.markdown-container  h5 {
+    font-size: 22px;
+}
+
+.markdown-container  h6 {
+    font-size: 20px;
+}
+
+.markdown-container p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.markdown-container a {
+    color: #b1aaaa;
+    text-decoration: underline;
+    line-height: 1.6;
+}
+
+/* LISTS */
+.markdown-container ul, ol {
+    margin: 20px 0;
+}
+
+.markdown-container ul,
+.markdown-container ol {
+    list-style: circle;
+    padding-left: 35px;
+}
+
+/* IMAGES */
+.markdown-container  img {
+    display: block;
+    margin: 20px 0;
+}
+
+/* BLOCKQUOTE */
+.markdown-container blockquote {
+    padding-left: 15px;
+    border-left: 4px solid white;
+    border-radius: 5px 0 0 5px;
+}
+
+/* TABLE */
+.markdown-container table {
+    border-collapse: separate;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #b1aaaa;
+    padding: 10px;
+}
+
+.markdown-container th {
+    background-color: #111111;
+}
+
+.markdown-container td {
+    padding: 10px;
+}
+
+.markdown-container table tr:nth-child(odd) {
+    background-color: #292828;
+}
+
+.markdown-container th {
+    text-align: left;
+}
+
+/* CODE */
+.markdown-container pre {
+    background-color: #292828;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.markdown-container code {
+    color: #c7254e;
+    background-color: #251a1d;
+    padding: 3px;
+    border-radius: 5px;
+}
